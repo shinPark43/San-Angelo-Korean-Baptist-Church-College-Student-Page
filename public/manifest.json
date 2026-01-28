@@ -9,13 +9,7 @@
   "orientation": "portrait",
   "icons": [
     {
-      "src": "KBC_icon2.png",
-      "sizes": "any",
-      "type": "image/png",
-      "purpose": "any maskable"
-    },
-    {
-      "src": "KBC_icon2.png",
+      "src": "icons/icon1.png",
       "sizes": "any",
       "type": "image/png",
       "purpose": "any maskable"

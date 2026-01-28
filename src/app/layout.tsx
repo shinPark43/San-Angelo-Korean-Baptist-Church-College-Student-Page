@@ -33,7 +33,7 @@ export default function RootLayout({
   return (
     <html lang="ko">
       <head>
-        <link rel="apple-touch-icon" href={withBasePath("/KBC_icon2.png")} />
+        <link rel="apple-touch-icon" href={withBasePath("/icons/apple-icon.png")} />
       </head>
       <body className="antialiased">
         {children}
