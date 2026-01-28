@@ -3,13 +3,13 @@ import "./globals.css";
 import { withBasePath } from "@/lib/basePath";
 
 export const metadata: Metadata = {
-  title: "KBC 청년부",
+  title: "HKBC청년부",
   description: "San Angelo Korean Baptist Church 청년부 정보 페이지",
   manifest: withBasePath("/manifest.json"),
   appleWebApp: {
     capable: true,
     statusBarStyle: "default",
-    title: "KBC 청년부",
+    title: "HKBC청년부",
   },
   formatDetection: {
     telephone: false,

@@ -102,7 +102,7 @@ export default function MemberSearch() {
         />
         <button
           onClick={handleSearch}
-          className="px-5 py-3 bg-accent text-white rounded-xl font-medium text-[15px] active:scale-95 transition-transform"
+          className="flex-shrink-0 px-6 py-3 bg-accent text-white rounded-xl font-medium text-[15px] active:scale-95 transition-transform"
         >
           검색
         </button>
@@ -110,7 +110,19 @@ export default function MemberSearch() {
 
       {/* Results */}
       {hasSearched && (
-        <div className="card p-4">
+        <div className="card p-4 relative">
+          <button
+            onClick={() => {
+              setHasSearched(false);
+              setSearchName("");
+              setDuties(null);
+            }}
+            className="absolute top-3 right-3 w-7 h-7 flex items-center justify-center rounded-full bg-gray-100 text-text-tertiary hover:bg-gray-200 active:scale-95 transition-all"
+          >
+            <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+              <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </button>
           {hasDuties ? (
             <div className="space-y-4">
               {/* Prayer Duties */}
