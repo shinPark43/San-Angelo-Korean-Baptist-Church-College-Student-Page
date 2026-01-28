@@ -128,11 +128,11 @@ export default function TeamsPage() {
               onChange={(e) => setSearchName(e.target.value)}
               onKeyDown={handleKeyDown}
               placeholder="이름을 입력하세요"
-              className="flex-1 px-4 py-3 rounded-xl bg-white border border-border text-[15px] placeholder:text-text-tertiary focus:outline-none focus:border-accent focus:ring-1 focus:ring-accent"
+              className="flex-1 min-w-0 px-4 py-3 rounded-xl bg-white border border-border text-[15px] placeholder:text-text-tertiary focus:outline-none focus:border-accent focus:ring-1 focus:ring-accent"
             />
             <button
               onClick={handleSearch}
-              className="flex-shrink-0 px-6 py-3 bg-accent text-white rounded-xl font-medium text-[15px] active:scale-95 transition-transform"
+              className="flex-shrink-0 px-4 py-3 bg-accent text-white rounded-xl font-medium text-[15px] active:scale-95 transition-transform"
             >
               검색
             </button>
