@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { withBasePath } from "@/lib/basePath";
 
 export default function Header() {
   return (
@@ -6,7 +7,7 @@ export default function Header() {
       <div className="px-5 py-4 flex items-center gap-5">
         <div className="w-20 h-20 relative flex-shrink-0">
           <Image
-            src="/KBC_icon2.png"
+            src={withBasePath("/KBC_icon2.png")}
             alt="KBC Logo"
             fill
             className="object-contain"

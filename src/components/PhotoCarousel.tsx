@@ -2,11 +2,12 @@
 
 import Image from "next/image";
 import { useState } from "react";
+import { withBasePath } from "@/lib/basePath";
 
 const photos = [
-  "/group_photo.jpeg",
-  "/group_photo2.jpg",
-  "/group_photo3.jpg",
+  withBasePath("/group_photo.jpeg"),
+  withBasePath("/group_photo2.jpg"),
+  withBasePath("/group_photo3.jpg"),
 ];
 
 export default function PhotoCarousel() {

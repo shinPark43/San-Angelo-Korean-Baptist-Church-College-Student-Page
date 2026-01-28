@@ -1,10 +1,11 @@
 import type { Metadata, Viewport } from "next";
 import "./globals.css";
+import { withBasePath } from "@/lib/basePath";
 
 export const metadata: Metadata = {
   title: "KBC 청년부",
   description: "San Angelo Korean Baptist Church 청년부 정보 페이지",
-  manifest: "/manifest.json",
+  manifest: withBasePath("/manifest.json"),
   appleWebApp: {
     capable: true,
     statusBarStyle: "default",
@@ -32,7 +33,7 @@ export default function RootLayout({
   return (
     <html lang="ko">
       <head>
-        <link rel="apple-touch-icon" href="/icons/icon-192.png" />
+        <link rel="apple-touch-icon" href={withBasePath("/KBC_icon2.png")} />
       </head>
       <body className="antialiased">
         {children}
